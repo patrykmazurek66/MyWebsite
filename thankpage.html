@@ -9,9 +9,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/default.css">
     <link id="theme-style" rel="stylesheet" href="">
+    <style>
+        .s1{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .main-container{
+            width: 60%;
+        }
+        .left-column{
+            padding: 20px;
+
+        }
+        .right-column{
+            justify-items: center;
+        }
+        a{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        img{
+            width: 60%;
+        }
+    </style>
 </head>
 <body>
-    <section class="s1" id="top-section">
+    <section class="s1">
         <div class="main-container">
             <div class="intro-wrapper">
                 <div class="nav-wrapper">
@@ -21,10 +47,14 @@
                         <div id="dot-3" class="browser-dot"></div>
                     </div>
                 </div>
-                
-                <h1>Dzieki!</h1>
-                <a href="https://patrykmazurek66.github.io/MyWebsite/">POWROT</a>
-                
+
+                <div class="left-column">
+                    <h1>Dziekuję za przesłanie formularza!</h1>
+                </div>
+
+                <div class="right-column">
+                    <a href="https://patrykmazurek66.github.io/MyWebsite/"><img src="images/homeicon.png"><p>Powrót</p></a>
+                </div>
             </div>
         </div>
     </section>
