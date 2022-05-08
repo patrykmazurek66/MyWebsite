@@ -32,7 +32,7 @@ function setTheme(){
         } else{
             document.querySelector("#github-logo").setAttribute("src","images/GitHub-Mark-Light-32px.png")
         }
-        document.querySelector("#theme-style").setAttribute("href",`${theme}.css`)
+        document.querySelector("#theme-style").setAttribute("href",`css/${theme}.css`)
         window.localStorage.setItem('theme', theme);
 }
 
