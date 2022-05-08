@@ -82,7 +82,10 @@ section:first-child{
     background-position: 0 0;
 }
 
-
+#greeting-text{
+    color: #fff;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
+}
 
 .greeting-wrapper{
     display: grid;
@@ -93,6 +96,7 @@ section:first-child{
 }
 
 .intro-wrapper{
+    width: 100%;
     background-color: var(--secondaryColor);
     border: 1px solid var(--borderColor);
     border-radius: 5px 5px 0 0;
@@ -206,7 +210,7 @@ section:first-child{
     }
 
 
-    .theme-dot:hover{
+    .theme-dot:hover .theme-dot:active{
     border-width: 5px;
     margin:1.5px;
     }
@@ -295,6 +299,10 @@ section:first-child{
     background-color: var(--previewShadow);
 }
 
+#skills ul{
+padding:0;
+}
+
 .social-links{
     display:grid;
     align-content: center;
@@ -363,7 +371,7 @@ section:first-child{
     font-size: 14px;
 }
 
-.post:hover .post-preview{
+.post:hover .post-preview, .post:active .post-preview{
     bottom: 0%;
 
 }
@@ -412,6 +420,7 @@ section:first-child{
 }
 
 #back-to-top-btn{
+    box-sizing: border-box;
     position: fixed;
     display: none;
     bottom: 25px;
@@ -427,11 +436,9 @@ section:first-child{
     text-align: center;
     line-height: 50px;
     overflow: hidden;
-
-
 }
 
-#back-to-top-btn:hover{
+#back-to-top-btn:hover, #back-to-top-btn:active{
     filter: brightness(1.2);
 
 }
@@ -440,22 +447,44 @@ section:first-child{
     display: block;
     width: 100%;
     height: 200%;
-    font-size: 2em;
+    font-size: 46px;
     color: var(--mainText);
 
     transition: translate 0.2s ease-in;
 }
 
-#back-to-top-btn:hover a{
+#back-to-top-btn:hover a, #back-to-top-btn:active a{
     translate: 0 -50px;
 }
 
 @media screen and (max-width: 800px){
+    *{
+        font-size: 0.8rem;
+    }
+    h1{font-size: 36px;}
+    h2{font-size: 28px;}
+    h3{font-size: 24px;}
+    h4{font-size: 20px;}
+    h5{font-size: 16px;}
+    h6{font-size: 12px;}
+
     .main-container{
         width:95%;
     }
     section:first-child{
         height: auto;
+    }
+
+    #preview-shadow{
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        padding:10px;
+    }
+    #preview{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px;    
     }
 
     .intro-wrapper{
@@ -474,5 +503,22 @@ section:first-child{
        margin-left: auto;
        margin-right: auto;
    }
-   
+   #back-to-top-btn{
+    bottom: 15px;
+    right: 15px;
+
+    width: 25px;
+    height: 25px;
+
+    line-height: 25px;
+
+}
+#back-to-top-btn:hover a, #back-to-top-btn:active a{
+    translate: 0 -25px;
+}
+#back-to-top-btn a{
+
+    font-size: 21px;
+
+}
 }
