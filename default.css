@@ -283,7 +283,7 @@ section:first-child{
 
 .about-wrapper{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
     padding-bottom: 50px;
     padding-top: 50px;
     gap: 100px; 
@@ -454,7 +454,9 @@ section:first-child{
     .main-container{
         width:95%;
     }
-
+    section:first-child{
+        height: auto;
+    }
 
     .intro-wrapper{
         grid-template-columns: 1fr;
@@ -467,5 +469,10 @@ section:first-child{
     .right-column{
         justify-content: center;
     }
-
+   .post-wrapper>*{
+       max-width: 90%;
+       margin-left: auto;
+       margin-right: auto;
+   }
+   
 }
