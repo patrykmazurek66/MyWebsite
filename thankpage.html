@@ -28,7 +28,14 @@
             </div>
         </div>
     </section>
-<script src="js/script.js"></script>
-<script>setTheme();</script>
+<script>
+
+var theme = window.localStorage.getItem('theme');
+if(theme === "null"){
+        theme = "default";
+    }
+    document.querySelector("#theme-style").setAttribute("href",`css/${theme}.css`)
+
+</script>
 </body>
 </html>
